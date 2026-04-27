@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [{"key": "ext", "value": "media"}]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "video.twimg.com/amplify_video",
+      "resourceTypes": ["main_frame", "sub_frame", "media", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [{"header": "Referer", "operation": "remove"}]
+    },
+    "condition": {
+      "urlFilter": "video.twimg.com/amplify_video",
+      "resourceTypes": ["main_frame", "sub_frame", "media", "xmlhttprequest", "other"]
+    }
+  }
+]

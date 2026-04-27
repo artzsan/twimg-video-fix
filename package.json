@@ -1,0 +1,19 @@
+{
+  "name": "twimg-video-fix",
+  "private": true,
+  "version": "1.0",
+  "type": "module",
+  "scripts": {
+    "clean": "pnpx del-cli ./twimg-video-fix-v*",
+    "build:vite": "vite build",
+    "build": "pnpm clean && pnpm build:vite"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.28",
+    "vite": "^5.4.7",
+    "zip-a-folder": "^3.1.7"
+  },
+  "dependencies": {
+    "del-cli": "^5.1.0"
+  }
+}
