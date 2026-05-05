@@ -25,7 +25,7 @@
       "requestHeaders": [{"header": "Referer", "operation": "remove"}]
     },
     "condition": {
-      "urlFilter": "video.twimg.com/amplify_video",
+      "urlFilter": "video.twimg.com/*_video",
       "resourceTypes": ["main_frame", "sub_frame", "media", "xmlhttprequest", "other"]
     }
   }
